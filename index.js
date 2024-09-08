@@ -52,7 +52,7 @@ async function run() {
     const database = client.db("bistroboss").collection('carts')
     try {
         // Connect the client to the server	(optional starting in v4.7)
-        await client.connect();
+        // await client.connect();
         const Admin = async (req, res, next) => {
             const email = req.decoded.email
             const query = { email: email }
